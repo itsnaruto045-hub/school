@@ -1,0 +1,27 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body, html { width:100%; height:100%; font-family:Arial,sans-serif; overflow-x:hidden; color:#fff; background:#000; }
+canvas { position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
+
+header.header { text-align:center; padding:50px 20px; }
+header.header h1 { font-size:3em; text-shadow:0 0 10px #00ffe0,0 0 20px #00aaff; }
+header.header p { font-size:1.5em; text-shadow:0 0 5px #fff; }
+
+section { padding:50px 20px; text-align:center; }
+section h2 { font-size:2em; margin-bottom:20px; color:#00ffff; text-shadow:0 0 5px #fff; }
+section p, section ul { font-size:1.2em; margin-bottom:20px; }
+section img { max-width:80%; margin:20px 0; border-radius:10px; box-shadow:0 0 20px #00aaff; }
+
+.teacher-list { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+.teacher { width:200px; }
+.teacher img { width:100%; border-radius:10px; box-shadow:0 0 10px #0ff; }
+.teacher p { margin-top:10px; font-size:1em; }
+
+.gallery-images { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+.gallery-images img { width:250px; border-radius:10px; box-shadow:0 0 10px #0ff; }
+
+button { background:linear-gradient(45deg,#ff0066,#00ffff,#ffcc00,#ff0066); border:none; padding:15px 30px; margin:10px; font-size:1.2em; color:white; border-radius:10px; cursor:pointer; transition:0.3s all; animation:float 3s ease-in-out infinite; }
+button:hover { transform:scale(1.1) rotate(-5deg); box-shadow:0 0 20px #fff; }
+
+@keyframes float { 0%,100% { transform:translateY(0px); } 50% { transform:translateY(-10px); } }
+
+footer { text-align:center; padding:20px; background:rgba(0,0,0,0.7); font-size:1em; }
